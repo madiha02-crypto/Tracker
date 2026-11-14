@@ -381,7 +381,7 @@ def add_submission(assignment_id, roll_no, link,):
     session.close()
     return response 
 
-# EC9
+
 def get_student_submission(roll_no):
 
     session = Session(engine)
@@ -405,9 +405,7 @@ def get_student_submission(roll_no):
 
     session.close()   
     return response
-
-
-# EC10
+    
 def get_assignment_report(assignment_id):
     session = Session(engine)
 
@@ -476,7 +474,7 @@ def get_student_submissions(roll_no):
     return response
 
 
-# EC8
+
 
 def grade_submission(submission_id: int, marks: float, feedback: str):
 
